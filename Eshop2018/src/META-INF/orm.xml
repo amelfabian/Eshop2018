@@ -5,8 +5,26 @@
 	version="2.0">
 
 	<access>FIELD</access> <!-- utilisation ou des setters (PROPERTY) des classes des entités -->
+	
+	<entity class="model.beans.LoginUser"
+		name="LoginUser">
+		<table name="loginUser"/>
+		<attributes>
+			<id name="idUser">
+				<column name="idUser"/>
+				<generated-value strategy="IDENTITY" />
+			</id>
+			
+			<basic name="emailUser">
+				<column name="emailUser"/>
+			</basic>
+			<basic name="passwdUser">
+				<column name="passwdUser"/>
+			</basic>
+		 </attributes>
+		</entity>
 
-
+</entity-mappings>
 
 
 
