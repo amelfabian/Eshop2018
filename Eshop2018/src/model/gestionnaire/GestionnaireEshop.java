@@ -13,7 +13,8 @@ public class GestionnaireEshop {
 	
 	public GestionnaireEshop() {
 		super();
-		this.em = Persistence.createEntityManagerFactory()
+		this.em = Persistence.createEntityManagerFactory("Mysql_eclipselink").createEntityManager();
+		
 	}
 
 }
