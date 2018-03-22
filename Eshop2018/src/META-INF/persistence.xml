@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+    
+	<persistence-unit name="Mysql_eclipselink">
+
+	    <!-- Eclipselink -->
+		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost/Eshop"/>
+			<property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<property name="javax.persistence.jdbc.user" value="fabian"/>
+			<property name="javax.persistence.jdbc.password" value="Fa.90120535118"/>
+			<property name="eclipselink.logging.level" value="FINE"/>
+		</properties>
+
+	</persistence-unit>
+	
+</persistence>
