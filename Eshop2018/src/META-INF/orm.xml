@@ -6,6 +6,10 @@
 
 	<access>FIELD</access> <!-- utilisation ou des setters (PROPERTY) des classes des entités -->
 	
+	<named-query name="getAllProduct">
+		<query>select c from Product as c </query>
+	</named-query>
+	
 	<entity class="model.beans.LoginUser"
 		name="LoginUser">
 		<table name="loginUser"/>
@@ -23,7 +27,35 @@
 			</basic>
 		 </attributes>
 		</entity>
-
+		
+		<entity class="model.beans.Product"
+		name="Product">
+		<table name="product"/>
+		<attributes>
+			<id name="idProduct">
+				<column name="idProduct"/>
+				<generated-value strategy="IDENTITY" />
+			</id>
+			
+			<basic name="priceProduct">
+				<column name="priceProduct"/>
+			</basic>
+			<basic name="stockLevel">
+				<column name="stockLevel"/>
+			</basic>
+			<basic name="brand">
+				<column name="brand"/>
+			</basic>
+			
+			<basic name="descriptionProduct">
+				<column name="descriptionProduct"/>
+			</basic>
+			<basic name="refDiscount">
+				<column name="refDiscount"/>
+			</basic>
+		 </attributes>
+		</entity>
+		
 </entity-mappings>
 
 

@@ -66,7 +66,7 @@ input {
 
 #page_header {
 	width: 780px;
-	height: 113px;
+	height: 90px;
 	color: #fff;
 	background: url('images/header_background.gif') repeat-x 0px 0px;
 	overflow: hidden;
@@ -105,7 +105,7 @@ input {
 
 #page_headerlinks {
 	padding-right: 20px;
-	padding-top: 25px;
+	padding-top: 50px;
 	width: 275px;
 	float: right;
 	text-align: left;
@@ -187,7 +187,7 @@ input {
 
 #page_menu li {
 	margin-right: 1px;
-	width: 129px;
+	width: 194px;
 	height: 21px;
 	float: left;
 	background: url('images/menu_background.gif') repeat-x 0px 0px;
@@ -199,7 +199,7 @@ input {
 
 #page_menu li.last {
 	margin-right: 0px;
-	width: 130px;
+	width: 195px;
 }
 
 #page_menu a {
